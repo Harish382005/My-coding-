@@ -1,0 +1,82 @@
+COURSE = {
+    "modules": [
+        {
+            "title": "Basics",
+            "sub": "Mudhal padi",
+            "lessons": [
+                {
+                    "id": "hello",
+                    "title": "print() - mudhal command",
+
+                    "learn": """
+                    <p><code>print()</code> dhaan Python la nee kathukkura mudhal command.</p>
+                    <ul>
+                        <li>Text na quotes kulla ezhudhanum: <code>"Vanakkam"</code></li>
+                        <li>Number ku quotes vendaam: <code>print(25)</code></li>
+                        <li>Python case-sensitive. <code>print</code> sari, <code>Print</code> thappu.</li>
+                    </ul>
+                    """,
+
+                    "example": """
+print("Vanakkam, Python!")
+print(2 + 3)
+print("Naan", "kathukiren")
+                    """,
+
+                    "task": "Rendu line print pannu. First line: Vanakkam Nanba. Second line: Naan Python kathukiren.",
+
+                    "starter": "# inga ezhudhu\n",
+
+                    "tests": [
+                        {
+                            "stdout": True,
+                            "expect": "Vanakkam Nanba\nNaan Python kathukiren"
+                        }
+                    ],
+
+                    "hint": "Rendu thani print() venum. Text ah quotes kulla vechiko.",
+
+                    "solution": 'print("Vanakkam Nanba")\nprint("Naan Python kathukiren")\n'
+                },
+
+                {
+                    "id": "variables",
+                    "title": "Variables",
+
+                    "learn": """
+                    <p>Variable na oru peyar vechcha box. Adhula oru value store pannalam.</p>
+                    <ul>
+                        <li><code>name = "Arun"</code> : text (str)</li>
+                        <li><code>age = 22</code> : number (int)</li>
+                        <li><code>height = 5.8</code> : decimal (float)</li>
+                    </ul>
+                    <p>Peyar la space irukkakoodaadhu, number la start aagakoodaadhu.</p>
+                    """,
+
+                    "example": """
+name = "Arun"
+age = 22
+print(name, age)
+
+age = age + 1
+print("Adutha varusham:", age)
+                    """,
+
+                    "task": 'city variable la "Chennai" store pannu. years variable la 3 store pannu. Apparam print(city, years) pannu.',
+
+                    "starter": "# city, years variables create pannu\n",
+
+                    "tests": [
+                        {"stdout": True, "expect": "Chennai 3"},
+                        {"expr": "city", "expect": "Chennai"},
+                        {"expr": "years", "expect": "3"}
+                    ],
+
+                    "hint": 'city = "Chennai" and years = 3 nu rendu line ezhudhu.',
+
+                    "solution": 'city = "Chennai"\nyears = 3\nprint(city, years)\n'
+                }
+            ]
+        }
+    ]
+}
